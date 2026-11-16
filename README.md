@@ -1,4 +1,4 @@
-# Task-Tracker
+# Task Tracker
 
 A command-line task manager written in Python. You add tasks, change their description or status, delete them and list them. Tasks are saved in a JSON file, so they are still there the next time you run the program.
 
@@ -56,4 +56,9 @@ Each task stores:
 | `createdAt` | When the task was created |
 | `updatedAt` | When the task was last changed |
 
-Tasks are saved in `task_tracker.json` in the folder where you
+Tasks are saved in `task_tracker.json` in the folder where you run the program. The file is created on the first save. On the very first run, the program prints a message that no file was found. This is normal.
+
+## Known limitations
+
+- The roadmap.sh challenge asks for command-line arguments (for example `task-cli add "Buy groceries"`). This version uses an interactive menu instead.
+- If `task_tracker.json` is damaged, the program prints a warning and starts with an empty list.
